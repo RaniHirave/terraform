@@ -1,6 +1,6 @@
 resource "google_compute_firewall" "allow-ssh" {
-  name    = "allow-devops-practice-ssh"
-  network = "${google_compute_network.devops-practice-vpc-01.name}"
+  name    = "allow-test-ssh"
+  network = "${google_compute_network.test-vpc-01.name}"
   source_ranges = ["114.143.52.206/32"]
 
   allow {
